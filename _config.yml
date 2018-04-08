@@ -17,7 +17,7 @@ plugins:
 
 
 # paginate ： 分頁功能，單頁文章數。
-paginate: 3
+# paginate: 3
 
 
 # Exclude from processing.
