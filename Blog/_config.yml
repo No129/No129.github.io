@@ -1,0 +1,33 @@
+
+title: TOHU's Blog
+email: Hammer.mailbox@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  記錄作為軟體工程師的作者所遇到的各種技術問題與解決方法.
+
+#baseurl: "" # the subpath of your site, e.g. /blog
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: jekyllrb
+github_username:  No129
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+
+# paginate ： 分頁功能，單頁文章數。
+paginate: 3
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body id="TOP">
+
+    {% include header.html %}
+
+    <div id="main" class="container main">
+        <div class="post-area post">
+            {{ content }}
+        </div>
+    </div>
+
+    <div id="top" data-toggle="tooltip" data-placement="left" title="回到最頂">
+        <a href="#TOP">
+            <div class="arrow"></div>
+            <div class="stick"></div>
+        </a>
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

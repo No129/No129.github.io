@@ -1,0 +1,13 @@
+body { 
+    font-size:2rem; 
+} 
+
+/* 代码块 */ 
+.highlight { 
+    padding:1rem 2rem 1rem 2rem; 
+} 
+    
+/* 字符串背景色与代码块背景色一致 */ 
+.highlight .s { 
+    background-color: #272822 
+}
