@@ -2,21 +2,16 @@
 layout: default 
 ---
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('#PostTOC').toc();
-    })
-</script>
-
 <div class="row">
-
     <div id="myArticle" class="col-sm-9">
         <header>
             <h1>{{ page.title }}</h1>
             <p>{{ page.date | date: "%b %-d, %Y" }}</p>
         </header>
         <hr>
-        <div id="PostTOC">aaa</div>
+        <div id="PostTOC">
+            <hr>
+        </div>
         <hr>
         <article>
             {{ content }}

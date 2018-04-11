@@ -18,7 +18,14 @@ last_modified_at: 2018-04-08 22:23:51 UTC+8
 2. 前端開發的 html, css, javascript 
 
 abc
-
+``` csharp
+namespace PwCTW{
+    class Employee{
+        ///姓名
+        string name{get;set;}
+    }
+}
+```
 # 動態建立文章目錄
 
 可以動態提供文章目錄

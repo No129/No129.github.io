@@ -11,26 +11,22 @@
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml
 	 " | prepend: site.baseurl | prepend: site.url }}" />
 
-	<!-- 语法高亮 -->
-	<link rel="stylesheet" href="{{ " /static/pygments/vim.css " | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="{{ " /static/custom/article_content.css " | prepend: site.baseurl }}">
-
-
 	<!-- bootstrap-3.3.0 -->
-	<link rel="stylesheet" type="text/css" href="{{ " /bootstrap/3.3.0/css/bootstrap.css " | prepend: site.baseurl }}">
-	<script type="text/javascript" src="{{" /bootstrap/3.3.0/js/bootstrap.min.js " | prepend: site.baseurl}}"></script>
+	<link rel="stylesheet" type="text/css" href="{{ " /reference/bootstrap/3.3.0/css/bootstrap.css " | prepend: site.baseurl }}">
+	<script type="text/javascript" src="{{" /reference/bootstrap/3.3.0/js/bootstrap.min.js " | prepend: site.baseurl}}"></script>
 
-	<!-- TOC -->	
+	<!-- TOC -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript" src="{{" /static/custom/toc.js " | prepend: site.baseurl}}"></script>
+	<script type="text/javascript" src="{{" /reference/toc/toc.js " | prepend: site.baseurl}}"></script>
 
-	<link rel="stylesheet" type="text/css" href="{{ " /css/index.css " | prepend: site.baseurl }}">
-	<script type="text/javascript" src="{{" /static/custom/index.js " | prepend: site.baseurl}}"></script>
-	<!--
-			<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="{{" /static/custom/jquery-1.11.1.min.js " | prepend: site.baseurl}}"></script>
-	-->
-	<script type="text/javascript" src="{{" /static/custom/index.js " | prepend:site.baseurl}}"></script>
+	<!-- 語法高亮 -->
+	<link rel="stylesheet" href="{{ " /reference/pygments/colorful.css " | prepend: site.baseurl }}">	
 
-
+	<!-- 自訂規格 -->
+	<link rel="stylesheet" type="text/css" href="{{ " /custom/css/id/index.css " | prepend: site.baseurl }}">
+	<link rel="stylesheet" type="text/css" href="{{ " /custom/css/id/top.css " | prepend: site.baseurl }}">
+	<link rel="stylesheet" type="text/css" href="{{ " /custom/css/class.css " | prepend: site.baseurl }}">
+	<link rel="stylesheet" type="text/css" href="{{ " /custom/css/common.css " | prepend: site.baseurl }}">
+	<script type="text/javascript" src="{{" /custom/js/common.js " | prepend:site.baseurl}}"></script>
+	
 </head>

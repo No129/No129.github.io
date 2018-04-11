@@ -1,0 +1,34 @@
+/* body */
+body { 
+    font-size:2rem; 
+    font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
+	background-image: url(/custom/img/background.jpg);
+}
+
+/* footer */
+footer{
+	min-height: 50px;
+	line-height: 50px;
+	margin-top: 80px;
+	background: #3f4850;
+	color: #aaa;
+	text-align: center;
+	font-size:14px;
+
+	-webkit-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
+	-o-box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
+	box-shadow: 0 -2px 4px rgba(0,0,0,0.5);
+}
+
+footer a:link {color: #aaa}		/* 未访问的链接 */
+footer a:visited {color: #888}	/* 已访问的链接 */
+footer a:hover {color: #bbb;text-decoration: none;}	/* 鼠标移动到链接上 */
+footer a:active {color: #bbb}	/* 选定的链接 */
+footer .point{
+	margin: 0 8px;
+}
+/*--------------------*/
+
+
+

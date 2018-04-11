@@ -1,4 +1,5 @@
 // https://github.com/ghiculescu/jekyll-table-of-contents
+
 (function($){
   $.fn.toc = function(options) {
     var defaults = {

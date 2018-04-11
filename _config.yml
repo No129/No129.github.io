@@ -15,6 +15,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
+post_item_width: col-sm-9
 
 # paginate ： 分頁功能，單頁文章數。
 # paginate: 3

@@ -2,4 +2,55 @@
 layout: default 
 ---
 
-    {% include contnet.html %}
+<div id="index" class="row">
+    <div class="{{ site.post_item_width }}">
+        <div class="custom-post-list-header">
+            Posts
+        </div>
+        <div class="custom-post-list-body">
+            <div post-cate="All">
+                {% for post in site.posts %}
+                <a class="custom-post-list-item" href="{{ post.url | prepend: site.baseurl }}">
+                    <h2>
+                        {{ post.title }}
+                    </h2>
+                    <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+                </a>
+                {% endfor %}
+            </div>
+            <!-- <div class="posts-in-categories"> -->
+            {% for category in site.categories %}
+            <div post-cate="{{category | first}}">
+                {% for posts in category %} {% for post in posts %} {% if post.url %}
+                <a href="{{ post.url }}" class="custom-post-list-item">
+                    <h2>
+                        {{ post.title }}
+                    </h2>
+                    <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+                </a>
+                {% endif %} {% endfor %} {% endfor %}
+            </div>
+            {% endfor %}
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="custom-shadow-corner-curl hidden-xs">
+            <div class="custom-categories-list-header">
+              Categories
+            </div>
+      
+            <a href="javascript:;" class="custom-categories-list-item" cate="All">
+              All
+              <span class="custom-my-badge"> {{site.categories | size}}</span>
+            </a>
+            {% for category in site.categories %}
+            <a href="javascript:;" class="custom-categories-list-item" cate="{{ category | first }}">
+              {{ category | first }}
+              <span class="custom-my-badge">{{ category | last | size }}</span>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+    </div>
+</div>
