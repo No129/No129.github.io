@@ -166,39 +166,41 @@ last_modified_at: 2018-05-02 00:00:00 UTC+8
         ```
         
 
-## 三、 UserControl 再繫結 MainWindow 屬性
+## 三、 UserControl 繫結指定屬性
 
 1. 調整 MyTextBlock 控制項
 
     這部分可以參考「 UserControl 繫結 UserControl 屬性」說明，透過 Code 或 XAML 達成，下面以 XAML 示範。
 
     * Code 
-    ```csharp
-        public readonly DependencyProperty DescriptionProperty =
-                DependencyProperty.Register(nameof(Description), typeof(string), typeof(MyTextBlock), new PropertyMetadata());
+        ```csharp
+            public readonly DependencyProperty DescriptionProperty =
+                    DependencyProperty.Register(nameof(Description), typeof(string), typeof(MyTextBlock), new PropertyMetadata());
 
-        public string Description
-        {
-            get { return (string)this.GetValue(DescriptionProperty); }
-            set { this.SetValue(DescriptionProperty, value ); }
-        }  
-    ```
-    * XAML
-    ```xml
-    <UserControl x:Class="DEMO.MyTextBlock"
-            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-            xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-            xmlns:local="clr-namespace:DEMO"
-            mc:Ignorable="d" 
-            d:DesignHeight="450" d:DesignWidth="800"
-            x:Name="MainControl">
-        <Grid>
-            <TextBlock Text="{Binding Description, ElementName=MainControl }" />
-        </Grid>
-    </UserControl>
-    ```
+            public string Description
+            {
+                get { return (string)this.GetValue(DescriptionProperty); }
+                set { this.SetValue(DescriptionProperty, value ); }
+            }  
+        ```
+
+    * XAML    
+
+        ```xml
+        <UserControl x:Class="DEMO.MyTextBlock"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                xmlns:local="clr-namespace:DEMO"
+                mc:Ignorable="d" 
+                d:DesignHeight="450" d:DesignWidth="800"
+                x:Name="MainControl">
+            <Grid>
+                <TextBlock Text="{Binding Description, ElementName=MainControl }" />
+            </Grid>
+        </UserControl>
+        ```
 
 2. 調整 MainWindow 視窗
     
@@ -229,5 +231,5 @@ last_modified_at: 2018-05-02 00:00:00 UTC+8
 
 方案一最簡單，但是控制項繫結的對象被定義在控制項內，使用的容器物件指定 DataContext 時配合控制項的設定，若是無法知道控制項繫結設定，就無法或難以正確的給定繫結資料，僅適合在快速建立且後續不維護的單一專案。
 
-方案二透過相依屬性的建立，提供控制項的資料繫結來源可由容器自訂的彈性，方案三則由方案二延伸而來，展示容器自訂的部分也由透過繫結完成，兩種型式都可視情況選用，例如按鍵的說明，通常不會在執行階段異動，採用方案二的方式，在 XAML 直接給定即可，兼顧方便與直覺；但如果是操作訊息之類，會在執行階段異動，若採用方案二，在異動邏輯會有操作控制項的必要，如此可能打破 WPF 前端的 MVVM 架構，此時採用方案三並繫結到相依屬性後，就可以透過重設屬性來更新控制項，達成以資料更新達成控制項操作的 MVVM 架構。
+方案二透過相依屬性的建立，提供控制項的資料繫結來源可由容器自訂的彈性，方案三則由方案二延伸而來，展示容器自訂的部分也由透過繫結完成，兩種型式都可視情況選用，例如按鍵的說明，通常不會在執行階段異動，採用方案二的方式，在 XAML 直接給定即可，兼顧方便與直覺；但如果是操作訊息之類，會在執行階段異動，若採用方案二，在異動邏輯會有操作控制項的必要，如此可能打破 WPF 前端的 MVVM 架構，此時採用方案三並繫結到相依屬性後，就可以透過重設屬性來更新控制項，達成以資料更新進行控制項操作的 MVVM 架構。
 
