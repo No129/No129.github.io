@@ -137,14 +137,12 @@ last_modified_at: 2018-05-02 00:00:00 UTC+8
             初始程式中指定控制項的 DataContext 為自已，並建立對應的相依屬性。
 
             ```csharp
-
                 public MyTextBlock()
                 {
                     InitializeComponent();
                     // 指定資料來源。
                     this.DataContext = this;
                 }
-
             ```
 
     * 透過 XAML 設定繫結：
@@ -205,27 +203,27 @@ last_modified_at: 2018-05-02 00:00:00 UTC+8
 2. 調整 MainWindow 視窗
     
     * XAML 
-    ```xml
-    <<UserControl x:Class="DEMO.MyTextBlock"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:DEMO"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
-             x:Name="MainControl"  >
-        <Grid>
-            <TextBlock Text="{Binding Description, ElementName=MainControl }" />
-        </Grid>
-    </UserControl>
-    ```
-
+        ```xml
+        <<UserControl x:Class="DEMO.MyTextBlock"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                xmlns:local="clr-namespace:DEMO"
+                mc:Ignorable="d" 
+                d:DesignHeight="450" d:DesignWidth="800"
+                x:Name="MainControl"  >
+            <Grid>
+                <TextBlock Text="{Binding Description, ElementName=MainControl }" />
+            </Grid>
+        </UserControl>
+        ```
+    
     * Code
 
-    ```csharp
-    public string Description { get; set; } = "It's alive!!! by MainWin.Description";
-    ```
+        ```csharp
+        public string Description { get; set; } = "It's alive!!! by MainWin.Description";
+        ```
 
 # 分析 ANALYSIS
 
