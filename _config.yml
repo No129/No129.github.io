@@ -1,5 +1,5 @@
 
-title: TOHU's Blog
+title: Chun-Hsiang's Blog
 email: Hammer.mailbox@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   記錄作為軟體工程師的作者所遇到的各種技術問題與解決方法.
@@ -15,6 +15,7 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# 主頁 css 設定
 post_item_width: col-sm-9
 
 # paginate ： 分頁功能，單頁文章數。
