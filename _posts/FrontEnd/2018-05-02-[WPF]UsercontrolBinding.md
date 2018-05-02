@@ -101,6 +101,7 @@ last_modified_at: 2018-05-02 00:00:00 UTC+8
 
         public string Description { get; set; }= "It's alive!!! by Binding MainWindow.Description";
         ```
+
 ## 二、 UserControl 繫結 UserControl 屬性
 
 1. 在 MyTextBlock 建立 Descrption 相依屬性 。
@@ -165,8 +166,9 @@ last_modified_at: 2018-05-02 00:00:00 UTC+8
             </Grid>
         </UserControl>
         ```
-## 三、 UserControl 繫結 UserControl 屬性/再繫結 MainWindow 屬性
+        
 
+## 三、 UserControl 再繫結 MainWindow 屬性
 
 1. 調整 MyTextBlock 控制項
 
