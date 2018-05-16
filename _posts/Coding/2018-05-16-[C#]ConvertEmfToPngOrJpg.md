@@ -11,7 +11,7 @@ last_modified_at: 2018-05-16 00:00:00 UTC+8
 
 維基百科如此描述：`「WMF格式在Microsoft Windows 3.0開始引入，是一個16位元的標準。Windows NT推出時，微軟又推出一個32位元的加強版標準，稱之為Enhanced Metafile（簡稱EMF）。這個加強版除了原有的命令以外，亦新加入一批新的指令。有某幾個牌子的印表機支援列印EMF格式的檔案。」`[WMF][WMF]
 
-在 MS Office 系統中相互操作，例如先自 Excel 的複製後，再於 Word 中以「圖片」模式貼上，這樣的操作取得的圖片在 Word 中即是以 .emf 格式儲存，之後只要將該 Word 檔以壓縮檔方式解開即可找到。除了 EMF 格式外，微軟還定義了幾種檔案格式 WMF, EMF+ 及 EMFSPOOL 格式，可以從 EMF 規格書中知道這幾個格式的關係。
+在 MS Office 系統中相互操作，例如先自 Excel 的複製後，再於 Word 中以「圖片」模式貼上，這樣的操作取得的圖片在 Word 中即是以 .emf 格式儲存，之後只要將該 Word 檔以壓縮檔方式解開即可找到。除了 EMF 格式外，微軟還定義了幾種檔案格式 WMF, EMF+ 及 EMFSPOOL 格式，可以從 [EMF][MSDN-EMF] 規格書中知道這幾個格式的關係。
 
 ![Relation Of Formats](/assets/2018-05-16/RelationOfFormats.jpg)
 
