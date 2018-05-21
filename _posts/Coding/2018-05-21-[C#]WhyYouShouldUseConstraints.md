@@ -187,9 +187,8 @@ public List<T> TableToList<T>(DataTable dt)
 
 如果利用泛型約束加上 `where T : new()` 就可以在設計階段發現，同時程式的寫法也可以精簡為 `T entity = new T();` 來生成物件，而不需使用到反射。
 
-
 ```csharp
-public static List<T> TableToList<T>(DataTable dt) where T : new()
+public List<T> TableToList<T>(DataTable dt) where T : new()
 {
     List<T> list = new List<T>();
     Type type = typeof(T);
