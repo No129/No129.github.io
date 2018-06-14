@@ -6,7 +6,26 @@ tag:
 date: 2018-04-08 22:23:51 UTC+8 
 last_modified_at: 2018-04-08 22:23:51 UTC+8 
 ---
+# 本地建構 Jekyll 環境
 
+[windows 安裝 Jekyll](http://www.195440.com/?p=782)
+
+[githup-page](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
+
+[安裝 Jekyll](http://jekyllcn.com/docs/installation/)
+
+##  在 Windows 環境
+[Run jekyll on Windows](http://jekyllcn.com/docs/windows/#installation)
+
+
+
+
+## 安裝 Jekyll 
+發生 https 錯誤時，改用 http 
+```
+gem source -a http://rubygems.org/
+gem install jekyll
+```
 
 # 為什麼採用 gitpage + jekyll + vscode 這樣的組合？
 
