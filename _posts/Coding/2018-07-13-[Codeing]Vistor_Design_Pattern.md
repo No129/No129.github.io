@@ -63,6 +63,7 @@ last_modified_at: 2018-07-13 24:00:00 UTC+8
 ```
 
 * 讓 Food 及 Book 繼承 BaseProduct 抽象類別，具有「被訪問」的功能：
+
 ```csharp
     public class Food : BaseProduct
     {
