@@ -6,18 +6,15 @@ tag:
 date: 2018-07-13 24:00:00 UTC+8 
 last_modified_at: 2018-07-13 24:00:00 UTC+8 
 ---
-# 適用情境 ( context )
-* 「物件結構」的「元素」不常變動，但「動作」經常增減。
+# 適用情境
+* 「物件結構」的「元素」種類不常變動，但「動作」經常增減。
 
-# 特色
-* 資料與動作分離，便於擴展操作。
-
-# 缺點
-* 破壞資料結構的封裝 ( 因為元素必須提供操作必要資料 )
-* 增加資料結構種類時需要對於操作都要提供。
+# 缺點：
+* 採用 Visitor Design Pattern 會破壞資料結構的封裝，因為元素必須提供操作必要資料。
+* 若是需要增加資料結構種類時需要對於操作都要提供，對於既有的操作類別都必須更新。
 
 # 類別圖：
-![Vistor Design Pattern](/assets/DesignPattern/VistorDesignPattern.jpg)
+![Vistor Design Pattern](/assets/DesignPattern/VisitorDesignPattern.jpg)
 
 # 釋例-計算折扣
 
@@ -168,7 +165,7 @@ Food's holiday price:80
 Book's holiday price:95
 ```
 
-* 但這個例子並無法表現出 Vistor Design Pattern 的優點，畢竟客戶端可以直接如下例呼叫，就可以得到相同結果，單純利用多形的特色就可以將資料與操作分離，完全不用套模式。
+* 但這個例子並無法表現出 Visitor Design Pattern 的優點，畢竟客戶端可以直接如下例呼叫，就可以得到相同結果，單純利用多形的特色就可以將資料與操作分離，完全不用套模式。
 
 ```csharp
     class Program
@@ -228,6 +225,7 @@ Book's holiday price:95
 
 # 結論
 首先，訪問者模式將原本在操作時需要進行型別判斷的程序直接透過類別本身處理，可以將原本需要透過型別判斷的判斷句取消，統一透過 Accept 函式處理掉了；此外，訪問者一般會遍歷所有項目，所以可以做到跨項目的功能，例如前面的結帳功能，就能在計算同時行加總的功能。
+
 ```csharp
     public class CommonCalculator : BaseCalculator
     {
