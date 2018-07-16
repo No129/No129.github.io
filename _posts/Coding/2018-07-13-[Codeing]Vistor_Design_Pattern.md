@@ -4,21 +4,25 @@ title: "訪問者模式 ( Vistor Design Pattern )"
 categories: TECH
 tag: 
 date: 2018-07-13 24:00:00 UTC+8 
-last_modified_at: 2018-07-13 24:00:00 UTC+8 
+last_modified_at: 2018-07-16 24:00:00 UTC+8 
 ---
 # 適用情境
-* 「物件結構」的「元素」種類不常變動，但「動作」經常增減。
+* 「物件結構」的「元素」種類不常變動，但「動作」經常增減；因此，若未符合以下任一描述，基本就不用考慮此模式：
+    * 需要輪詢一組「元素」物件，針對「不同元素」的作出不同處理。( 此段所指「元素」為基底類別或介面，「不同元素」是指其衍生或實做類別 )
+    * 需要輪詢一組「元素」物件，執行跨元素的處理，例如累計或篩選。( 此段所指「元素」皆指執行個體 )
 
 # 缺點：
-* 採用 Visitor Design Pattern 會破壞資料結構的封裝，因為元素必須提供操作必要資料。
-* 若是需要增加資料結構種類時需要對於操作都要提供，對於既有的操作類別都必須更新。
+* 破壞資料結構的封裝，因為元素必須提供操作必要資料。
+* 違反「依賴倒轉」原則，角色 Visitor 是對元素的實作類別設計而不是對介面。
+* 增加元素類別種類時對整體影響很大，因為元素類別增加時需要對於既有的 Visitor 類別都必須更新以提供新增元素類別的處理。
 
 # 類別圖：
 ![Vistor Design Pattern](/assets/DesignPattern/VisitorDesignPattern.jpg)
 
 # 釋例-計算折扣
+本節透過一個商品價格計算的例子說明，商品區分為 Food 及 Book 兩類，價格計算則區分為平日或假日兩種處理邏輯，之後可能因應各種情境需要不同計算邏輯。
 
-* 首先將商品的兩種型態 Food 及 Book 建立類別：
+* 首先建立商品的兩種型態 Food 及 Book 對應的類別：
 
 ```csharp
     public class Food
@@ -42,24 +46,27 @@ last_modified_at: 2018-07-13 24:00:00 UTC+8
     }
 ```
 
-* 建立 Vistor Design Pattern 的兩個角色，在此以抽象類別撰寫，採用介面也可以：
+* 建立 Vistor Design Pattern 的元素與操作角色，在此以抽象類別撰寫，採用介面也可以：
 
 ```csharp
+    //元素角色的基底類別。
     public abstract class BaseProduct
     {
         public abstract void Accept(BaseCalculator pi_objCalculator);
     }
 
+    //操作角色的基底類別。
     public abstract class BaseCalculator
     {
+        //處理 Food 的計算。
         public abstract void Visit(Food food);
-
+        //處理 Book 的計算。
         public abstract void Visit(Book book);
 
     }
 ```
 
-* 讓 Food 及 Book 繼承 BaseProduct 抽象類別，具有「被訪問」的功能：
+* 讓 Food 及 Book 類別繼承 BaseProduct 抽象類別，具有「被訪問」的能力：
 
 ```csharp
     public class Food : BaseProduct
@@ -71,6 +78,7 @@ last_modified_at: 2018-07-13 24:00:00 UTC+8
             this.Price = pi_nPrice;
         }
 
+        //覆寫基底類別方法。
         public override void Accept(BaseCalculator pi_objCalculator)
         {
             pi_objCalculator.Visit(this);
@@ -86,6 +94,7 @@ last_modified_at: 2018-07-13 24:00:00 UTC+8
             this.Price = pi_nPrice;
         }
 
+        //覆寫基底類別方法。
         public override void Accept(BaseCalculator pi_objCalculator)
         {
             pi_objCalculator.Visit(this);
@@ -93,9 +102,10 @@ last_modified_at: 2018-07-13 24:00:00 UTC+8
     }
 ```
 
-* 建立「訪問者」角色的 CommonCalculator 類別提供一般時段的計算功能：
+* 建立「訪問者」角色的 CommonCalculator 類別提供平日的計算功能：
 
 ```csharp
+    //提供平日計算邏輯。
     public class CommonCalculator : BaseCalculator
     {
 
@@ -111,9 +121,10 @@ last_modified_at: 2018-07-13 24:00:00 UTC+8
     }
 ```
 
-* 假日時若需要不同的折扣所以增加一個 HolidayCalculator 類別：
+* 假日需要不同的折扣所以增加一個 HolidayCalculator 類別：
 
 ```csharp
+    //提供假日的計算邏輯
     public class HolidayCalculator : BaseCalculator
     {
 
@@ -142,7 +153,7 @@ last_modified_at: 2018-07-13 24:00:00 UTC+8
             var objCommon = new CommonCalculator();        
             var objHoliday = new HolidayCalculator();
             
-            Console.WriteLine("-- 一般時段 --");
+            Console.WriteLine("-- 平日時段 --");
             objMilk.Accept(objCommon);
             objEZABC.Accept(objCommon);
             
@@ -157,12 +168,12 @@ last_modified_at: 2018-07-13 24:00:00 UTC+8
 
 * 輸出結果：
 ```
--- 一般時段 --
-Food's common price:100
-Book's common price:100
--- 假日時段 --
-Food's holiday price:80
-Book's holiday price:95
+    -- 平日時段 --
+    Food's common price:100
+    Book's common price:100
+    -- 假日時段 --
+    Food's holiday price:80
+    Book's holiday price:95
 ```
 
 * 但這個例子並無法表現出 Visitor Design Pattern 的優點，畢竟客戶端可以直接如下例呼叫，就可以得到相同結果，單純利用多形的特色就可以將資料與操作分離，完全不用套模式。
