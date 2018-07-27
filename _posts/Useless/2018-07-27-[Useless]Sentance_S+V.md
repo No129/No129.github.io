@@ -19,8 +19,7 @@ last_modified_at: 2018-07-27 00:00:00 UTC+8
 # 程式開發的 [Hello World](https://zh.wikipedia.org/wiki/Hello_World)，數學界的[公理](https://zh.wikipedia.org/wiki/%E5%85%AC%E7%90%86) - 「S+V」
 
 
-讓我們來分析這個句型的需求是什麼
-
+* 讓我們來分析這個句型的需求是什麼
 ```
 Feature 主詞+動詞
 
@@ -168,6 +167,7 @@ function static IsIntransitiveVerb(thie string v){
 # 句型 S+V 程式邏輯
 
 * 規格書：
+
 ```
 Feature 主詞+動詞
 
