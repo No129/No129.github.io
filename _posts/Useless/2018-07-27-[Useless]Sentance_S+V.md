@@ -20,6 +20,7 @@ last_modified_at: 2018-07-27 00:00:00 UTC+8
 
 
 * 讓我們來分析這個句型的需求是什麼
+
 ```
 Feature 主詞+動詞
 
@@ -39,6 +40,7 @@ function sentence(string s, string v){
 ```
 
 * 主詞不是名詞的案例
+
 ```
 Scenario 主詞不是名詞時回傳 What?
     Give 主詞為'happens' 
@@ -69,6 +71,7 @@ function static IsNoun(this string s){
 
 
 * 需求異動：代名詞也可以為主詞，所以案例應該可以：
+
 ```
 Scenario 主詞為代名詞，動詞為動詞
     Give 主詞為'It' 
@@ -127,6 +130,7 @@ function static IsNoun(this string s){
 ```
 
 * 需求異動：不是什麼動詞都可以，必須是「不及物動詞」( Intransitive Verb ) 才可以。
+
 ```
 Scenario 動詞不是不及物動詞時，回傳 What?
     Give 主詞為'Nothing' 
@@ -164,6 +168,7 @@ function static IsIntransitiveVerb(thie string v){
     return bReturn;
 }
 ```
+
 # 句型 S+V 程式邏輯
 
 * 規格書：
@@ -197,6 +202,7 @@ Scenario 動詞必須為不及物動詞，否則回傳 What?
 ```
 
 * 實做程式：
+
 ```csharp
 function sentence(string s, string v){
     if(string.IsNoun(s) && string.IsIntransitiveVerb(v)){
