@@ -35,7 +35,7 @@ Scenario 主詞為名詞，動詞為動詞
 
 ```csharp
 function sentence(string s, string v){
-    console.writeline(string.form('{0} {1}.', s , v));
+    console.writeline(string.form("{0} {1}.", s , v));
 }
 ```
 
@@ -53,7 +53,7 @@ Scenario 主詞不是名詞時回傳 What?
 ```csharp
 function sentence(string s, string v){
     if(string.IsNoun(s)){
-        console.writeline(string.format('{0} {1}.', s , v));
+        console.writeline(string.form("{0} {1}.", s , v));
     }else{
         console.writeline("What?");
     }
@@ -83,7 +83,7 @@ Scenario 主詞為代名詞，動詞為動詞
 ```csharp
 function sentence(string s, string v){
     if(string.IsNoun(s) || string.IsSynonym(s)){
-        console.writeline(string.form('{0} {1}.', s , v));
+        console.writeline(string.form("{0} {1}.", s , v));
     }else{
         console.writeline("What?");
     }
@@ -111,7 +111,7 @@ function static IsSynonym(this string s){
 ```csharp
 function sentence(string s, string v){
     if(string.IsNoun(s)){
-        console.writeline(string.form('{0} {1}.', s , v));
+        console.writeline(string.form("{0} {1}.", s , v));
     }else{
         console.writeline("What?");
     }
@@ -141,7 +141,7 @@ Scenario 動詞不是不及物動詞時，回傳 What?
 ```csharp
 function sentence(string s, string v){
     if(string.IsNoun(s) && string.IsIntransitiveVerb(v)){
-        console.writeline(string.form('{0} {1}.', s , v));
+        console.writeline(string.form("{0} {1}.", s , v));
     }else{
         console.writeline("What?");
     }
@@ -167,6 +167,7 @@ function static IsIntransitiveVerb(thie string v){
 ```
 # 句型 S+V 程式邏輯
 
+* 規格書：
 ```
 Feature 主詞+動詞
 
@@ -193,4 +194,33 @@ Scenario 動詞必須為不及物動詞，否則回傳 What?
         And 動詞為'like'
     When 呼叫句子
     Then 得到'What?'  
+```
+
+* 實做程式：
+```csharp
+function sentence(string s, string v){
+    if(string.IsNoun(s) && string.IsIntransitiveVerb(v)){
+        console.writeline(string.form("{0} {1}.", s , v));
+    }else{
+        console.writeline("What?");
+    }
+}
+
+function static IsNoun(this string s){
+    var bReturn = false;
+
+    if(Noun.Contains(s) || Synonym.Contains(s)){
+        bReturn = true;
+    }
+    return bReturn;
+}
+
+function static IsIntransitiveVerb(thie string v){
+    var bReturn = false;
+
+    if(IntransitiveVerb.Contains(v)){
+        bReturn = true;
+    }
+    return bReturn;
+}
 ```
