@@ -1,23 +1,13 @@
 ---
 layout: post
-title: "[useless]英文句型需求分析 - S+V"
+title: "英文句型需求分析 - S+V"
 categories: Useless
 tag: 
 date: 2018-07-27 00:00:00 UTC+8 
 last_modified_at: 2018-07-27 00:00:00 UTC+8 
 ---
 
-# 句型結構的需求分析
-透過需求分析的手法來了解句型結構。首先要先了解老師口頭的「詞性」一辭其實有兩種不同的觀點：
-* 個別單字所代表的詞性，例如，名詞 noun, 動詞 verb 
-* 句子組成元素的詞性，例如，主詞 subject, 動詞 verb 
-
-看看很多說法：
-* 「名詞可以當主詞」：具備名詞特性的單字，可以放在句型中主詞的位置。
-* 「動名詞可以代替名詞」：動詞只能放在句型中動詞的位置，但在轉換為動名詞後 ( V + ing )，可以代替名詞放在司型中主詞的位置。
-
 # 程式開發的 [Hello World](https://zh.wikipedia.org/wiki/Hello_World)，數學界的[公理](https://zh.wikipedia.org/wiki/%E5%85%AC%E7%90%86) - 「S+V」
-
 
 * 讓我們來分析這個句型的需求是什麼
 
