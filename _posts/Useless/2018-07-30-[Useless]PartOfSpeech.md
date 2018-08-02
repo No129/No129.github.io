@@ -33,13 +33,17 @@ S:.....
 * 「名詞可以當主詞」：具備名詞特性的單字，可以放在句型中主詞的位置。
 * 「動名詞可以代替名詞」：動詞只能放在句型中動詞的位置，但在轉換為動名詞後 ( V + ing )，可以代替名詞放在司型中主詞的位置。
 
-# 單字的詞性種類
+# 單字的八大詞性
 
-中文|縮寫|英文
+縮寫|英文|中文
 :-----------|:-----------|:-----------
-名詞       |N.　　　|noun
-動詞       |V.     |verb
-形容詞     |adj.   |adjective
+n.          |noun           |名詞       
+pron.       |pronoun        |代名詞      
+adj.        |adjective      |形容詞     
+adv.        |adverb         |副詞
+prep.       |preposition    |介系詞
+conj.       |conjunction    |連接詞
+int.        |interjection   |感嘆詞
 
 ## 單字延伸形成的詞類
 ### 動詞的延伸
@@ -55,11 +59,11 @@ S:.....
 
 |中文|縮寫|英文|
 |---|---|---|
-|主詞           |S.     |Subject|
-|不及物動詞     |Vi.    |Verb intransitive|
-|及物動詞       |Vt.    |verb transitive|
-|主詞補語       |S.C.   ||
-|受詞補語       |O.C.   ||
-|受詞           |O      ||
-|間接受詞       |I.O.||
-|直接受詞       |D.O.　　　||
+|S.     |Subject            |主詞           |
+|Vi.    |Verb intransitive  |不及物動詞     |
+|Vt.    |verb transitive    |及物動詞       |
+|S.C.   |                   |主詞補語       |
+|O.C.   |                   |受詞補語       |
+|O      |                   |受詞           |
+|I.O.   |                   |間接受詞       |
+|D.O.   |                   |直接受詞       |
