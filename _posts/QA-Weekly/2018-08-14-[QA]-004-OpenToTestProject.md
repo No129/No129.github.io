@@ -25,7 +25,6 @@ last_modified_at: 2018-08-14 23:59:59 UTC+8
 透過 Windows 的命令列模式，逐步操作下述命令：
 
 1. 從既有私鑰取得公鑰檔案
-
 ```
 sn -p PrivateKey.snk PublicKey.snk
 ```
