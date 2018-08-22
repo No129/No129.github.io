@@ -17,7 +17,7 @@ last_modified_at: 2018-08-22 23:59:59 UTC+8
 
 啟用 **Live Unit Testing** 功能只要在 ***Function Bar/Test/Live Unit Testing/Start*** 就可以。
 
-![LiveUnitTesting](/assets/2018-08-21/LiveUnitTesting.gif)
+![LiveUnitTesting](/assets/2018-08-22/LiveUnitTesting.gif)
 
 # 啟用後的不同
 
@@ -28,7 +28,7 @@ last_modified_at: 2018-08-22 23:59:59 UTC+8
 
 因為 **Live Unit Testing** 執行需要時間，所以短暫的會在原有的圖示右下附上圓形計時器圖案。
 
-![LiveUnitTestingIconWaiting](/assets/2018-08-21/LiveUnitTestingIcon.png)
+![LiveUnitTestingIconWaiting](/assets/2018-08-22/LiveUnitTestingIcon.png)
 
 # 舊測試如何支援新功能
 
