@@ -51,32 +51,39 @@ last_modified_at: 2018-09-05 23:59:59 UTC+8
    
     ![RecordingPanel](/assets/2018-09-05/Win_RecordingPanel.jpg)
 
-    接下來就可以操作錄製面板進行動作的錄製如下圖，錄製了輸入框內容的更新及按下按鍵的動作。
+    接下來就可以操作錄製面板進行動作的錄製，如下圖示範了錄製輸入框內容的更新及按下按鍵的動作。
+
+    錄製操作過程相當直覺，先點擊紅色錄製鍵 (錄製鍵在錄製過程會切換為暫停鍵 ) 接下來就進行預定錄製的操作，錄製工具上方會即時出現每個被錄下的動作說明，不再錄製可以後可以直點擊儲存，給定此操作組合一個名稱 ( 練習就先使用預設名稱 )，重覆前述程序可以再錄製其他的操作組合，但目前就先關閉離開。
 
     ![Recording01](/assets/2018-09-05/Recording_01.gif)
 
  4. 整合錄製動作與測試函式
 
-    開啟預設建立的測試類別，調整原來的測試函式如下。
+    開啟專案建立時預設建立的測試類別，調整原來的測試函式如下。
+
+    透過 ApplicationUnderTest 開啟及關閉待測應用程式，因為錄製介面操作並不會自動開啟及關閉對應的應用程式。
    
-   ```csharp
-    [TestMethod]
-    public void CodedUITestMethod1()
-    {
-        var sAppFullPath = @"your\app\full\path\app.exe";
-        var objApp = ApplicationUnderTest.Launch(sAppFullPath);
-        var objMap = new UIMap1Classes.UIMap1();
+    ```csharp
+      [TestMethod]
+      public void CodedUITestMethod1()
+      {
+          var sAppFullPath = @"your\app\full\path\app.exe";
+          var objApp = ApplicationUnderTest.Launch(sAppFullPath);
+          var objMap = new UIMap1Classes.UIMap1();
 
-        objMap.RecordedMethod1();
+          objMap.RecordedMethod1();//這裡要是前一步驟的操作組合名稱。
 
-        objApp.Close();            
-    }
-   ```
+          objApp.Close();            
+      }
+    ```
 
 5. 執行測試
 
    接下來就執行測試，應該就可以看到錄製的操作自己動起來，過程中要注意不要移到游標，不然會干擾到自動操作，可能造成未正常結果。
 
+# 結語
+
+  本文簡單的示範如何透過 Visual Studio 2017 提供的 Coded UI 專案，錄製使用者操作並整合於測試函式，
 # 參考 
 
  * [[MSDN]-UI 測試自動化](https://docs.microsoft.com/zh-tw/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2017)
