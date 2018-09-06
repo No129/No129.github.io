@@ -53,7 +53,7 @@ last_modified_at: 2018-09-05 23:59:59 UTC+8
 
     接下來就可以操作錄製面板進行動作的錄製如下圖，錄製了輸入框內容的更新及按下按鍵的動作。
 
-    ![Recording01](/assets/2018-09-05/recording_01.gif)
+    ![Recording01](/assets/2018-09-05/Recording_01.gif)
 
  4. 整合錄製動作與測試函式
 
