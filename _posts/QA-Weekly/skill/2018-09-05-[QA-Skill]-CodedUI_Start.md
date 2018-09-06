@@ -83,7 +83,8 @@ last_modified_at: 2018-09-05 23:59:59 UTC+8
 
 # 結語
 
-  本文簡單的示範如何透過 Visual Studio 2017 提供的 Coded UI 專案，錄製使用者操作並整合於測試函式，
+  本文簡單的示範如何透過 Visual Studio 2017 提供的 Coded UI 專案，錄製使用者操作並整合於測試函式，大概就只是「Hello, World」的概念，距離要能於實務上進行使用仍有距離，但至少開啟了應用程式介面的自動化測試之門。
+  
 # 參考 
 
  * [[MSDN]-UI 測試自動化](https://docs.microsoft.com/zh-tw/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2017)
