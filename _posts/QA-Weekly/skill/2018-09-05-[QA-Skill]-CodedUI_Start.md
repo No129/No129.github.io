@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "專案內部類別對測試專案開放"
+title: "[Coded UI]-快速開始 Coded UI 錄製使用者操作"
 categories: QA-Skill
 tag: 
 date: 2018-09-05 23:59:59 UTC+8 
@@ -9,7 +9,7 @@ last_modified_at: 2018-09-05 23:59:59 UTC+8
 
 # 前言
  
-  要執行端到端的測試，就是要模擬使用者真實操作，透過圖形化介面的真槍實彈的驗證，這次介紹 Visual Studio 2017 Enterprise/Ultimate 提供的 Coded UI 測試專案。  
+  要執行端到端的測試，就是要模擬使用者真實操作，透過圖形化介面的真槍實彈的驗證，這次介紹 Visual Studio 2017 Enterprise/Ultimate 提供的 Coded UI 測試專案，可以快速且直覺的錄製使用者操作，並將其應用於測試。  
 
 # 確認開發工具
 
