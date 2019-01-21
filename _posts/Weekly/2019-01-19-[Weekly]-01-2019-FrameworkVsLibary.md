@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[宅男週記] #01-2019 框架( framework ) 與 函式庫( libary )"
-categories: TeckWeekly
+categories: TechWeekly
 tag: 
 date: 2019-01-19 23:59:59 UTC+8 
 last_modified_at: 2019-01-19 23:59:59 UTC+8 
