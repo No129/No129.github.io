@@ -23,7 +23,7 @@ last_modified_at: 2018-08-27 23:59:59 UTC+8
 
 # 個別說明
 
- ### 單元測試 ( UT, Unit Test )
+### 單元測試 ( UT, Unit Test )
 
   * 目標：測試內容基於功能設計結果，確認類別功能正確運行。
 
@@ -31,7 +31,7 @@ last_modified_at: 2018-08-27 23:59:59 UTC+8
 
   * 執行：功能開發之間隨時進行。
 
- ### 整合測試 ( IT, Integration Test )
+### 整合測試 ( IT, Integration Test )
 
   * 目標：測試內容基於系統設計結果，確認類別功能間互動正確。
 
@@ -39,7 +39,7 @@ last_modified_at: 2018-08-27 23:59:59 UTC+8
 
   * 執行：UT 完成之後。
 
- ### 系統整合測試 ( SIT, System Integration Test )
+### 系統整合測試 ( SIT, System Integration Test )
 
  * 目標：測試內容基於框架設計結果，確認系統與外部系統的整合。
 
@@ -47,7 +47,7 @@ last_modified_at: 2018-08-27 23:59:59 UTC+8
 
  * 執行：IT 完成之後。
 
- ### 系統測試 ( ST, System Test )
+### 系統測試 ( ST, System Test )
 
  * 目標：測試內容基於需求分析結果，確認各項功能符合功能規範。
  
@@ -55,7 +55,7 @@ last_modified_at: 2018-08-27 23:59:59 UTC+8
  
  * 執行：SIT 完成之後。
 
- ### 使用者接受度測試 ( UAT, User Acceptance Test )
+### 使用者接受度測試 ( UAT, User Acceptance Test )
 
  * 目標：測試內容應基於需求訪談結果，大至業務流程是否符合業務需要，小至使用者操作習慣，重點在於能否產生預期價值。
  
