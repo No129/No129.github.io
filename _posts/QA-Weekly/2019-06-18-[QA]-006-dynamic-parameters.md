@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "透過 Visual Studio 建立效能及負載測試：動態變數"
-categories: QA QA-Skill TechWeekly
+categories: QA QA-Skill TechWeekly Stress-Test
 tag: 
 date: 2019-06-18 23:59:59 UTC+8 
 last_modified_at: 2019-06-18 23:59:59 UTC+8 

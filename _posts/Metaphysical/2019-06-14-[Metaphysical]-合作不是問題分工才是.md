@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[#1]合作不是問題，分工才是"
-categories: Weekly Metaphysical
+categories: Metaphysical
 tag: 
 date: 2019-06-14 23:59:59 UTC+8 
 last_modified_at: 2019-06-14 23:59:59 UTC+8 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[#2]品質檢查驗證的分工"
-categories: Weekly Metaphysical
+categories: Metaphysical
 tag: 
 date: 2019-06-14 23:59:59 UTC+8 
 last_modified_at: 2019-06-14 23:59:59 UTC+8 
