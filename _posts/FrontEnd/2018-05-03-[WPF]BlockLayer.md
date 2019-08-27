@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[WPF] 畫面遮蔽效果實作"
-categories: TECH
+categories: TECH WPF
 tag: WPF
 date: 2018-05-03 00:00:00 UTC+8
 last_modified_at: 2018-05-03 00:00:00 UTC+8 
