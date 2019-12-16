@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "即時反應測試覆蓋情形與執行結果 - Live Unit Testing"
-categories: Job QA-Skill
+categories: Job QA
 tag: 
 date: 2018-08-22 23:59:59 UTC+8 
 last_modified_at: 2018-08-22 23:59:59 UTC+8 

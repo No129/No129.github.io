@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "從既有程式建立單元測試專案"
-categories: Job QA-Skill
+categories: Job QA
 tag: 
 date: 2018-08-23 23:59:59 UTC+8 
 last_modified_at: 2018-08-23 23:59:59 UTC+8 

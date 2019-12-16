@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "透過 ClosedXML 設定 Excel 頁首"
-categories: Job TechWeekly ClosedXML
+categories: Job tip ClosedXML
 tag: 
 date: 2019-08-08 23:59:59 UTC+8 
 last_modified_at: 2019-08-08 23:59:59 UTC+8 

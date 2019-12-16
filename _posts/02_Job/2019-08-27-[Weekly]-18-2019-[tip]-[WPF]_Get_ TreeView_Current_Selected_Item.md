@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[WPF] 取得 TreeView 控制項目前選取項目"
-categories: Job TechWeekly WPF
+categories: Job tip WPF
 tag: 
 date: 2019-08-27 23:59:59 UTC+8 
 last_modified_at: 2019-08-27 23:59:59 UTC+8 

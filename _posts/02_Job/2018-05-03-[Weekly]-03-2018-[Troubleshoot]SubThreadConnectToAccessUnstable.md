@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[CODING]子執行緒存取 Access 資料庫連線不穩定"
-categories: Job TECH
+categories: Job Troubleshoot
 tag: 
 date: 2018-05-03 00:00:00 UTC+8 
 last_modified_at: 2018-05-03 00:00:00 UTC+8 

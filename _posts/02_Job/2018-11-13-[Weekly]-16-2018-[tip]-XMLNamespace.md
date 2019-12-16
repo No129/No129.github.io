@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[XML]建立具備名稱空間前置詞的 XML 節點"
-categories: Job TECH
+categories: Job tip
 tag: 
 date: 2018-11-13 00:00:00 UTC+8 
 last_modified_at: 2018-11-13 00:00:00 UTC+8 

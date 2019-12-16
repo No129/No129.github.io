@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Access] 如何在 Access 資料庫新增一個資料表"
-categories: Job TechWeekly Access
+categories: Job tip Access
 tag: 
 date: 2019-09-05 23:59:59 UTC+8 
 last_modified_at: 2019-09-05 23:59:59 UTC+8 

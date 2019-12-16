@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "程式備註標籤如何連結到 Sandcastle 的文件"
-categories: Job TechWeekly SandCastle
+categories: Job tip SandCastle
 tag: 
 date: 2019-02-25 23:59:59 UTC+8 
 last_modified_at: 2019-02-25 23:59:59 UTC+8 

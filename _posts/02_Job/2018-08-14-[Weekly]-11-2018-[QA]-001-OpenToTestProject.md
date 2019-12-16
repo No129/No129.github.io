@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "專案內部類別對測試專案開放"
-categories: Job QA-Skill
+categories: Job QA
 tag: 
 date: 2018-08-14 23:59:59 UTC+8 
 last_modified_at: 2018-08-14 23:59:59 UTC+8 

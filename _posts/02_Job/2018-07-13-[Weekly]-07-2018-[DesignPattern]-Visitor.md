@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "訪問者模式 ( Vistor Design Pattern )"
-categories: Job TECH
+categories: Job DesignPattern
 tag: 
 date: 2018-07-13 24:00:00 UTC+8 
 last_modified_at: 2018-07-18 24:00:00 UTC+8 

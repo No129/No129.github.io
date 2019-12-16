@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[C#] EMF 檔案轉換為 PNG/JPG 格式"
-categories: Job TECH
+categories: Job Troubleshoot
 tag: 
 date: 2018-05-16 00:00:00 UTC+8 
 last_modified_at: 2018-05-16 00:00:00 UTC+8 

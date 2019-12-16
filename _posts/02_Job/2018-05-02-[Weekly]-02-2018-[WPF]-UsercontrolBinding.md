@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[WPF] UserControl 的資料繫結"
-categories: Job TECH WPF
+categories: Job WPF
 tag: 
 date: 2018-05-02 00:00:00 UTC+8 
 last_modified_at: 2018-05-02 00:00:00 UTC+8 

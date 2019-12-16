@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "在 Visual Studio 中 SandCastle 的 Intellisense 功能失效"
-categories: Job TechWeekly SandCastle
+categories: Job SandCastle
 tag: 
 date: 2019-08-07 23:59:59 UTC+8 
 last_modified_at: 2019-08-07 23:59:59 UTC+8 
