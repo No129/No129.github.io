@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "「詞性」講得是那個？"
-categories: Useless
+categories: Life Other
 tag: 
 date: 2018-07-30 00:00:00 UTC+8 
 last_modified_at: 2018-07-30 00:00:00 UTC+8 

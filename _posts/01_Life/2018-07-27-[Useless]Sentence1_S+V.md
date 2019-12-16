@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "英文句型需求分析 - S+V"
-categories: Useless
+categories: Life Other
 tag: 
 date: 2018-07-27 00:00:00 UTC+8 
 last_modified_at: 2018-07-27 00:00:00 UTC+8 

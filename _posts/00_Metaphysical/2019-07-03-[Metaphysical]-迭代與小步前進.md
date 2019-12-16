@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[#3]迭代與小步前進"
+title: "[#2]迭代與小步前進"
 categories: Metaphysical
 tag: 
 date: 2019-07-03 23:59:59 UTC+8 
