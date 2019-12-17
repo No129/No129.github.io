@@ -30,7 +30,7 @@ last_modified_at: 2019-12-17 23:59:59 UTC+8
 
 * 步驟一：選擇 **Project template**  
 匯出精靈首先要決定匯出的範本型別，在此選擇 **Project Template** 選項，並從下拉選單選擇要匯出的專案範本，這個清單會自動將目前 **方案( Solution )** 所包含的專案都列示出來，但匯出功能僅能匯出個別專案作為範本。  
-![Chose Template Type](/assets/VS-Template/Wizard_ChoseTemplateType.png)
+![Chose Template Type](/assets/VS-Template/Wizard_ChoseTemplateType_ProjectTemplate.png)
 
 * 步驟二：填寫範本參數  
 接著會需要填寫範本的相關參數，接著按下 **Finish** 按鍵就完成匯出程序，得到一個專案範本。
@@ -68,7 +68,7 @@ last_modified_at: 2019-12-17 23:59:59 UTC+8
 **項目範本**也可以透過匯出精靈，直接將手頭的專案的類別匯出。先建立待匯出的類別內容，接下來就可以透過 [**Project->Export Template**] 操作呼叫出匯出精靈對話視窗。(Visual Stuido 2017)  
 * 步驟一：選擇 **Item template**  
 匯出精靈首先要決定匯出的範本型別，在此選擇 **Item template** 選項，並從下拉選單選擇要匯出的專案範本，這個清單會自動將目前 **方案( Solution )** 所包含的專案都列示出來，但匯出功能僅能匯出個別專案作為範本。  
-![Chose Template Type](/assets/VS-Template/Wizard_ChoseTemplateTypeItemTemplate.png)
+![Chose Template Type](/assets/VS-Template/Wizard_ChoseTemplateType_ItemTemplate.png)
 
 * 步驟二：選擇要匯出的檔案  
 這裡會提供所選擇的專案下所有的類別檔案，你可以從中選取要作為新增項目的檔案，但僅能選一個，且不能選檔案夾。
