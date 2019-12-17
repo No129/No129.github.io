@@ -38,9 +38,9 @@ last_modified_at: 2019-12-17 23:59:59 UTC+8
 其中 **Template Name** 、 **Template description** 及 **Icon Image** 三項對應新增專案的畫面資訊，而不可修改的 **Output localtion** 則是輸出路徑，可以看到輸出的檔案格式是副檔名為 **.zip** 的壓縮檔。
 ![Select Template Options Mppping New Project Dialog](/assets/VS-Template/Wizard_SelectTemplateOptionsMapNewProject.png)
 兩個勾選項目則分別是：
-* Automatically import the template into Visual Studio  
+    * Automatically import the template into Visual Studio  
 輸出後自動套用為目前的 Visual Studio 的範本。這裡建議先不要勾選，透過後面說明的方式手動套用，在範本管理上比較方便。
-* Display an explorer window on the output files folder  
+    * Display an explorer window on the output files folder  
 輸出後開啟檔案總管檢視輸出目錄。  
 
 ## 專案範本的使用  
@@ -81,9 +81,9 @@ last_modified_at: 2019-12-17 23:59:59 UTC+8
 其中 **Template Name** 、 **Template description** 及 **Icon Image** 三項對應新增專案的畫面資訊，而不可修改的 **Output localtion** 則是輸出路徑，可以看到輸出的檔案格式是副檔名為 **.zip** 的壓縮檔。
 ![Select Template Options Mppping New Project Dialog](/assets/VS-Template/Wizard_SelectTemplateOptionsMapNewItem.png)
 兩個勾選項目則分別是：
-* Automatically import the template into Visual Studio  
+    * Automatically import the template into Visual Studio  
 輸出後自動套用為目前的 Visual Studio 的範本。這裡建議先不要勾選，透過後面說明的方式手動套用，在範本管理上比較方便。
-* Display an explorer window on the output files folder  
+    * Display an explorer window on the output files folder  
 輸出後開啟檔案總管檢視輸出目錄。  
 
 ## 項目範本的使用
