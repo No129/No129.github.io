@@ -47,17 +47,20 @@ last_modified_at: 2019-12-17 23:59:59 UTC+8
 前面的說明中可以看到匯出的範本是一個壓縮檔，套用範本的方式也相當單純，就是放到 Visual Studio 預設的路徑下，然後 Visual Studio 在開啟時就會自行到該路徑下將解讀該壓縮檔。  
 所以說，那個路徑在那裡呢？可以區分為兩個不同層級，分述如下：
 * 應用層級
-* 使用者層級
+* 使用者層級  
+
 ### 應用層級
 依[這篇說明](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates?view=vs-2019)可以安裝到在以下路徑，再依據程式語言及文化語系放置，但沒有實際成功就是：  
 
-    C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\ProjectTemplates
+    C:\Program Files (x86)\Microsoft Visual Studio\2017\<edition>\Common7\IDE\ProjectTemplates
 
 
-### 使用者層級
+### 使用者層級  
 使用自訂範本則可以放在以下路徑，我在 Visual Studio 2017 中，放上去後就可以在 Visual Studio 2017 中選到自訂的範本，同時可以透過檔案夾來建立新增畫面的分類：  
 
     C:\Users\[User Name]\Documents\Visual Studio 2017\Templates\ProjectTemplates
+
+
 # 項目範本
 項目範本提供使用者一組定義的類別組合，省去特定角色的設定與新增程序，例如新增一個 WPF 的 **Window** 角色時，會同時新增 **.xaml** 及 **.cs**( 或 **.vb**) 兩個檔案，同時會將建立兩個檔案的關連，對於自訂類別( 例如套用自訂框架時，會固定繼承或實做 )的設定，避免了缺漏的可能，也減少了輸入的時間。
 
@@ -90,17 +93,19 @@ last_modified_at: 2019-12-17 23:59:59 UTC+8
 前面的說明中可以看到匯出的範本是一個壓縮檔，套用範本的方式也相當單純，就是放到 Visual Studio 預設的路徑下，然後 Visual Studio 在開啟時就會自行到該路徑下將解讀該壓縮檔。  
 所以說，那個路徑在那裡呢？可以區分為兩個不同層級，分述如下：
 * 應用層級
-* 使用者層級
+* 使用者層級  
+
 ### 應用層級
 依[這篇說明](https://docs.microsoft.com/en-us/visualstudio/ide/how-to-locate-and-organize-project-and-item-templates?view=vs-2019)可以安裝到在以下路徑，再依據程式語言及文化語系放置，但沒有實際成功就是：  
 
-    C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\ItemTemplates
+    C:\Program Files (x86)\Microsoft Visual Studio\2017\<edition>\Common7\IDE\ItemTemplates
 
 
 ### 使用者層級
 使用自訂範本則可以放在以下路徑，我在 Visual Studio 2017 中，放上去後就可以在 Visual Studio 2017 中選到自訂的範本，同時可以透過檔案夾來建立新增畫面的分類：  
 
     C:\Users\[User Name]\Documents\Visual Studio 2017\Templates\ItemTemplates
+
 
 # 參考文章
 * [MSDN:Project and item template](https://docs.microsoft.com/en-us/visualstudio/ide/creating-project-and-item-templates?view=vs-2017)
