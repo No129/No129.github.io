@@ -14,13 +14,23 @@ last_modified_at: 2020-04-03 22:23:51 UTC+8
 # 安裝
 * 取得延伸組件  
     開啟 Visual Studio 2017/2019 的 ***[延伸模組]-->[管理延伸組]*** 切換到 ***[線上]*** 項目，再透過搜尋「GhostDoc」關鍵字，執行下載。
+    ![取得延伸組件](../../assets/20200403/P1-GetExtension.png)
+    
 * 安裝延伸組件  
     關閉 Visual Studio 2017/2019 後，會自動啟動安裝對話視窗，同意更動系統後，就會啟動 VSIX Installer 的安裝視窗，同意之後就會進行安裝。
+    ![VSIX](../../assets/20200403/P2-VSIX.png)
+    ![VSIX](../../assets/20200403/P2-VSIX_1.png)
+    ![VSIX](../../assets/20200403/P2-VSIX_2.png)
 
 # 設定
 完成安裝後重新開啟 Visual Studio 2017/2019 後，在 ***[工具]*** 頁籤下會新增一個 ***[GhostDoc]*** 項目，可以透過 ***[工具]->[GhostDoc]-->[Options]*** 開啟設定對話視窗。
+![GhostDoc-Options](../../assets/20200403/P3-Options.png)
+
+
 
 切換到 ***[Rules]*** 項目下可以就不同的程式段落進行註解設定。
+![GhostDoc-Options](../../assets/20200403/P3-Options_1.png)
+
 
 [ghost]:https://marketplace.visualstudio.com/items?itemName=sergeb.GhostDoc
 [vs#1]:https://docs.microsoft.com/zh-tw/visualstudio/ide/reference/generate-xml-documentation-comments?view=vs-2019
