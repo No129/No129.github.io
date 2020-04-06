@@ -17,10 +17,10 @@ last_modified_at: 2020-04-03 22:23:51 UTC+8
     ![取得延伸組件](/assets/20200403/P1-GetExtension.png)
     
 * 安裝延伸組件  
-    關閉 Visual Studio 2017/2019 後，會自動啟動安裝對話視窗，同意更動系統後，就會啟動 VSIX Installer 的安裝視窗，同意之後就會進行安裝。
-    ![VSIX](/assets/20200403/P2-VSIX.png)
-    ![VSIX](/assets/20200403/P2-VSIX_1.png)
-    ![VSIX](/assets/20200403/P2-VSIX_2.png)
+    關閉 Visual Studio 2017/2019 後，會自動啟動安裝對話視窗，同意更動系統後，就會啟動 VSIX Installer 的安裝視窗，同意之後就會進行安裝。  
+    ![VSIX](/assets/20200403/P2-VSIX.png)  
+    ![VSIX](/assets/20200403/P2-VSIX_1.png)  
+    ![VSIX](/assets/20200403/P2-VSIX_2.png)  
 
 # 設定
 完成安裝後重新開啟 Visual Studio 2017/2019 後，在 ***[工具]*** 頁籤下會新增一個 ***[GhostDoc]*** 項目，可以透過 ***[工具]->[GhostDoc]-->[Options]*** 開啟設定對話視窗。
